@@ -141,6 +141,9 @@ function unlock(){
   if(document.getElementById("pass").value===password){
     document.getElementById("lock").classList.remove("active");
     document.getElementById("page1").classList.add("active");
+
+    // Play music after user click
+    document.getElementById("bgMusic").play();
   } else alert("Wrong password 💔");
 }
 
@@ -191,5 +194,6 @@ setInterval(createHeart,180);
 
 </body>
 </html>
+
 
 
